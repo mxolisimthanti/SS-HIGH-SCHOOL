@@ -27,3 +27,7 @@
 .sigweje-footer {
   @apply bg-[var(--sigweje-blue)] text-white py-10 mt-16;
 }
+:root {
+  --sigweje-blue: #003366;
+}
+
