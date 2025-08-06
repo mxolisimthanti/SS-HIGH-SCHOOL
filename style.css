@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colors for Sigweje High branding */
+:root {
+  --sigweje-blue: #003366;
+  --sigweje-white: #ffffff;
+}
+
+/* Logo animation */
+.logo-hover:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-[var(--sigweje-blue)] text-white py-2 px-5 rounded hover:bg-blue-900;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded shadow p-6 text-center;
+}
