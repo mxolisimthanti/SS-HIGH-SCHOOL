@@ -23,3 +23,7 @@
 .card {
   @apply bg-white rounded shadow p-6 text-center;
 }
+/* styles.css */
+.sigweje-footer {
+  @apply bg-[var(--sigweje-blue)] text-white py-10 mt-16;
+}
