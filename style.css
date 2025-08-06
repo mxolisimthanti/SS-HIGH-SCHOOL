@@ -30,4 +30,7 @@
 :root {
   --sigweje-blue: #003366;
 }
+.sigweje-footer {
+  @apply bg-[var(--sigweje-blue)] text-white py-10;
+}
 
