@@ -13,3 +13,10 @@ window.addEventListener("scroll", () => {
   document.getElementById("scrollBtn").style.display =
     window.scrollY > 300 ? "block" : "none";
 });
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
