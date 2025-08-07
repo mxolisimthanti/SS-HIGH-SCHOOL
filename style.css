@@ -24,27 +24,11 @@
   @apply bg-white rounded shadow p-6 text-center;
 }
 /* styles.css */
-.sigweje-footer {
-  @apply bg-[var(--sigweje-blue)] text-white py-10 mt-16;
-  
-.sigweje-footer {
-  background-color: var(--sigweje-blue);
-  color: white;
-  padding: 2.5rem 1rem;
-}
 
 :root {
   --sigweje-blue: #003366; /* You can change this to any shade of blue you prefer */
 }
 
-.sigweje-footer {
-  @apply bg-[var(--sigweje-blue)] text-white py-10;
-}
-.sigweje-footer {
-  background-color: #003366; /* Your powered blue */
-  color: white;
-  padding: 5rem 1rem;
-}
   .sigweje-footer {
   background-color: #003366;
   color: white;
