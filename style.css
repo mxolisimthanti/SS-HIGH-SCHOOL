@@ -40,4 +40,9 @@
 .sigweje-footer {
   @apply bg-[var(--sigweje-blue)] text-white py-10;
 }
+.sigweje-footer {
+  background-color: #003366; /* Your powered blue */
+  color: white;
+  padding: 2.5rem 1rem;
+}
 
