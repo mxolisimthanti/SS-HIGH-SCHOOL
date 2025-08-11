@@ -5,49 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Sigweje High School</title>
 
-  <!-- Tailwind CDN (optional) -->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Link to your custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
   <!-- Header placeholder -->
   <div id="header"></div>
-
-  <!-- Load header.js to inject header.html -->
   <script src="js/header.js"></script>
 
   <!-- Page content -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <h3>📍 School Info</h3>
-        <p><strong>Address:</strong> Near GG Shopping Centre, Ladysmith</p>
-        <p><strong>Phone:</strong> +27 87 123 4567</p>
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- Contact Info -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex-1">
+        <h3 class="text-xl font-semibold mb-4">📍 School Info</h3>
+        <p class="mb-2"><strong>Address:</strong> Near GG Shopping Centre, Ladysmith</p>
+        <p class="mb-2"><strong>Phone:</strong> +27 87 123 4567</p>
         <p><strong>Email:</strong> info@sigwejehigh.co.za</p>
       </div>
 
-      <div class="contact-form">
-        <h3>📬 Send Us a Message</h3>
-        <form id="contactForm" onsubmit="return validateForm()">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
-          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex-1">
+        <h3 class="text-xl font-semibold mb-4">📬 Send Us a Message</h3>
+        <form id="contactForm" onsubmit="return validateForm()" class="space-y-4">
+          <input type="text" id="name" placeholder="Your Name" required
+                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="email" id="email" placeholder="Your Email" required
+                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <textarea id="message" rows="5" placeholder="Your Message" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <button type="submit"
+                  class="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition">
+            Send Message
+          </button>
         </form>
       </div>
     </div>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <!-- Google Map -->
+    <div class="mt-10">
+      <iframe
+        class="w-full h-72 rounded-lg shadow-md"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4 mt-12">
     <p>© 2025 Sigweje High School | Built by WebPunter</p>
   </footer>
 
@@ -73,10 +82,5 @@
       return true;
     }
   </script>
-</body>
-</html>
-
-
- 
 </body>
 </html>
