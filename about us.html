@@ -1,1 +1,33 @@
+<!-- About Us Dropdown -->
+<div class="relative inline-block text-left">
+  <button onclick="toggleDropdown()" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:outline-none">
+    About Us
+    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <div id="aboutDropdown" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-10">
+    <div class="py-1">
+      <a href="history.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">History</a>
+      <a href="staff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Staff</a>
+      <a href="uniform.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">School Uniform</a>
+    </div>
+  </div>
+</div>
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("aboutDropdown");
+    dropdown.classList.toggle("hidden");
+  }
+
+  // Optional: Close dropdown when clicking outside
+  window.addEventListener("click", function (e) {
+    const button = document.querySelector("button[onclick='toggleDropdown()']");
+    const dropdown = document.getElementById("aboutDropdown");
+    if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add("hidden");
+    }
+  });
+</script>
 
