@@ -12,7 +12,7 @@
   <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
 </nav>-->
  <!-- Header -->
-<!-- header.html --> 
+<!-- header.html 
 <header style="background-color: #003366; color: white; padding: 20px; text-align: center;">
   <header class="bg-blue-800 text-white py-6 text-center">
     <img src="https://skools.co.za/wp-content/uploads/2024/05/sdsaOne-160x53-1.png" alt="Sigweje Logo" class="mx-auto w-24 mb-2">
@@ -30,5 +30,20 @@
       </ul>
     </nav>
   </header>
-</header>
+</header> -->
+ <!-- About Us Dropdown -->
+<li class="relative group">
+  <button class="hover:underline focus:outline-none">About Us ▾</button>
+
+  <!-- Always show dropdown if on about.html -->
+  <ul class="absolute bg-white text-gray-800 mt-2 rounded shadow-lg z-10 min-w-[160px] text-left
+             group-hover:block
+             {{ page === 'about' ? 'block' : 'hidden' }}">
+    <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">Overview</a></li>
+    <li><a href="history.html" class="block px-4 py-2 hover:bg-gray-100">History</a></li>
+    <li><a href="staff.html" class="block px-4 py-2 hover:bg-gray-100">Our Staff</a></li>
+    <li><a href="uniform.html" class="block px-4 py-2 hover:bg-gray-100">School Uniform</a></li>
+  </ul>
+</li>
+
 
