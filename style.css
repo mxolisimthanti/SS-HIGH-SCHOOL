@@ -1,17 +1,9 @@
-/* ================================
-   Sigweje High School Custom Styles
-   ================================ */
-
-/* Root Variables */
 :root {
   --sigweje-blue: #003366;
   --sigweje-white: #ffffff;
 }
 
-/* ================================
-   Base Styles
-   ================================ */
-
+/* Base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -23,52 +15,46 @@ section {
   padding: 20px;
 }
 
-/* ================================
-   Header & Navigation
-   ================================ */
-
-header {
-  background-color: var(--sigweje-blue);
-  color: white;
-  padding: 20px;
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-nav {
-  background-color: #005599;
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
   padding: 20px;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-nav ul li a:hover {
-  background-color: #004080;
-}
-
-/* ================================
-   Logo Animation
-   ================================ */
-
-.logo-hover:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-/* ================================
-   Buttons
-   ================================ */
-
+/* Buttons */
 .btn-primary {
   background-color: var(--sigweje-blue);
   color: white;
@@ -84,83 +70,82 @@ nav ul li a:hover {
   background-color: #004080;
 }
 
-/* ================================
-   Cards
-   ================================ */
+/* About Section */
+.about-section h3 {
+  font-size: 1.5rem;
+  color: var(--sigweje-blue);
+}
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 20px;
+.about-section p {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* ================================
-   Contact Section
-   ================================ */
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+/* Footer */
+.sigweje-footer {
+  background-color: var(--sigweje-blue);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.contact-info,
-.contact-form {
-  flex: 1 1 300px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.contact-form input,
-.contact-form textarea {
+.footer-grid h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-grid ul li {
+  margin-bottom: 8px;
+}
+
+.footer-grid ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-grid ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-grid iframe {
   width: 100%;
-  padding: 10px;
+  height: 200px;
+  border-radius: 8px;
+  border: none;
   margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
-.contact-form button {
-  background-color: var(--sigweje-blue);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* ================================
-   Footer
-   ================================ */
-
-footer,
-.sigweje-footer {
-  background-color: var(--sigweje-blue);
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-.sigweje-footer {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-/* ================================
-   Embedded Map
-   ================================ */
-
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 8px;
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
 }
