@@ -149,59 +149,6 @@ section {
    Feature Section: Image + Text
    ================================ */
 
-.feature-section {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .feature-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-}
-
-.feature-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.feature-text h2 {
-  font-size: 2rem;
-  color: #003366;
-  margin-bottom: 20px;
-}
-
-.feature-text p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.btn-primary {
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #004080;
-}
 /* ================================
    Feature Section: Flex Layout
    ================================ */
