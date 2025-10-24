@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sigweje High School</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+ <div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+</head>
+<!-- Admissions Page -->
+<section class="admissions-hero">
+  <div class="admissions-intro">
+    <h1>Admissions</h1>
+    <p>Sigweje High School is a proudly South African co-educational institution committed to developing the whole learner through a balanced focus on academics, sport, and cultural enrichment.</p>
+  </div>
+</section>
+
+<section class="admissions-content">
+  <div class="admissions-section">
+    <h2>2026 Applications for Grade 8</h2>
+    <p>Applicants seeking admission to Grade 8 in 2026 must complete the Gauteng Department of Education’s online application during the designated period. Application dates and procedures will be published here once confirmed by the GDE.</p>
+  </div>
+
+  <div class="admissions-section">
+    <h2>2026 Applications for Grades 9–11</h2>
+    <p>Prospective learners for Grades 9 to 11 are required to submit an Expression of Interest form along with the necessary supporting documents. Forms can be requested from our Admissions Office via <a href="mailto:admissions@sigwejehigh.co.za">admissions@sigwejehigh.co.za</a>.</p>
+  </div>
+
+  <div class="admissions-section">
+    <h2>School Fees – 2025</h2>
+    <p>In accordance with the South African Schools Act (Act No. 84 of 1996), Sigweje High School is a Section 21 – Fees Collecting School.</p>
+    <ul>
+      <li><strong>Annual Fee:</strong> R56 700 (excluding once-off development levy)</li>
+      <li><strong>Payment Options:</strong>
+        <ul>
+          <li>Credit card facilities available at the school</li>
+          <li>Once-off payment of R49 050 (includes early payment discount)</li>
+          <li>10 equal monthly payments of R5 470 (after deposit deduction)</li>
+        </ul>
+      </li>
+      <li>School fees for 2026 will be confirmed at the Annual General Meeting in October 2025.</li>
+    </ul>
+  </div>
+</section>
+  <!-- Footer -->
+<footer class="sigweje-footer">
+  <div class="footer-grid">
+
+    <!-- Quick Links -->
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3>Connect With Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp" /></a>
+      </div>
+    </div>
+
+    <!-- Location Map -->
+    <div>
+      <h3>📍 Find Us</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-md shadow">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    © 2025 Sigweje High School | Built by WebPunter
+  </div>
+</footer>
