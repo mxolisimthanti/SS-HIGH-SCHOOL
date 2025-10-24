@@ -6,7 +6,16 @@
   <title>Sigweje High School</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <div id="header"></div>
+ <div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
 </head>
 <body>
 
