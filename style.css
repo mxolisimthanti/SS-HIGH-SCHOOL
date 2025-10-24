@@ -145,9 +145,6 @@ section {
   margin: 0 auto;
   text-align: center;
 }
-/* ================================
-   Feature Section: Image + Text
-   ================================ */
 
 /* ================================
    Feature Section: Flex Layout
@@ -161,7 +158,7 @@ section {
 .feature-flex {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
