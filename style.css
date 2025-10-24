@@ -153,11 +153,10 @@ section {
 /* ================================
    Feature Section: 50/50 Layout
    ================================ */
-
 .feature-row {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  align-items: stretch; /* Equal height columns */
+  flex-wrap: nowrap;
+  align-items: stretch; /* Ensures equal height */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -173,12 +172,11 @@ section {
 
 .feature-img {
   width: 100%;
-  height: 100%; /* Fill parent height */
+  height: 100%; /* Match height of parent */
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 
 /* Footer */
 .sigweje-footer {
