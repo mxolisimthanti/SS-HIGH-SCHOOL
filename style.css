@@ -145,6 +145,58 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+/* ================================
+   Admissions Page Styling
+   ================================ */
+
+.admissions-hero {
+  background-color: #003366;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.admissions-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.admissions-intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.admissions-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.admissions-section {
+  margin-bottom: 40px;
+}
+
+.admissions-section h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.admissions-section p,
+.admissions-section ul {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.admissions-section ul {
+  padding-left: 20px;
+}
+
+.admissions-section ul li {
+  margin-bottom: 10px;
+}
 
 /* ================================
    Feature Section: 50/50 Layout
