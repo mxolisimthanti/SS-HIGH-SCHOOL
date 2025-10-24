@@ -154,59 +154,29 @@ section {
    Feature Section: 50/50 Layout
    ================================ */
 
-.feature-section {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-}
-
 .feature-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: stretch; /* Equal height columns */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .feature-half {
-  flex: 1 1 50%;
+  flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feature-img {
   width: 100%;
-  height: auto;
-  max-height: 100%;
+  height: 100%; /* Fill parent height */
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.feature-text h2 {
-  font-size: 2rem;
-  color: #003366;
-  margin-bottom: 20px;
-}
-
-.feature-text p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.btn-primary {
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-}
-
-.btn-primary:hover {
-  background-color: #004080;
 }
 
 
