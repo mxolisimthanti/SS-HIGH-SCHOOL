@@ -202,6 +202,77 @@ section {
 .btn-primary:hover {
   background-color: #004080;
 }
+/* ================================
+   Feature Section: Flex Layout
+   ================================ */
+
+.feature-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.feature-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .feature-flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.feature-image,
+.feature-text {
+  flex: 1;
+}
+
+.feature-image img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feature-text h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.feature-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: start;
+}
+
+.btn-primary:hover {
+  background-color: #004080;
+}
+
 
 /* Footer */
 .sigweje-footer {
