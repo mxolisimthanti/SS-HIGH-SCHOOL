@@ -204,6 +204,77 @@ section {
   color: #555;
   line-height: 1.6;
 }
+/* ================================
+   Culture Page Styling
+   ================================ */
+
+.culture-hero {
+  background-color: #660033;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.culture-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.culture-intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.culture-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.culture-section {
+  margin-bottom: 40px;
+}
+
+.culture-section h2 {
+  font-size: 1.8rem;
+  color: #660033;
+  margin-bottom: 15px;
+}
+
+.culture-section p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.culture-gallery {
+  margin-top: 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #660033;
+}
 
 /* ================================
    Academics Page Styling
