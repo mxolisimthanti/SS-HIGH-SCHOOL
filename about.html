@@ -2,70 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Sigweje High School</title>
-
-  <!-- Tailwind CSS CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sigweje High School</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+ <div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<!-- About Us Page -->
+<section class="about-hero">
+  <div class="about-intro">
+    <h1>About Sigweje High School</h1>
+    <p>
+      Sigweje High School is a proudly Black South African institution committed to academic excellence, cultural pride, and community empowerment. Located in the heart of KwaZulu-Natal, we serve as a beacon of opportunity and growth for learners from diverse backgrounds.
+    </p>
+  </div>
+</section>
 
-  <!-- Header placeholder -->
-  <div id="header"></div>
-  <script src="js/header.js"></script>
+<section class="about-content">
+  <div class="about-section">
+    <h2>Our Mission</h2>
+    <p>
+      To provide quality public education that nurtures academic achievement, personal growth, and social responsibility. We aim to empower learners with the skills, confidence, and values needed to thrive in a changing world.
+    </p>
+  </div>
 
-  <!-- Main Content -->
-  <section class="max-w-4xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold text-center mb-6">About Sigweje High School</h1>
+  <div class="about-section">
+    <h2>Our Vision</h2>
+    <p>
+      To be a leading institution of learning that celebrates African excellence, fosters innovation, and builds future leaders through holistic education.
+    </p>
+  </div>
 
-    <!-- Dropdown Menu -->
-    <div class="relative inline-block text-left mb-8">
-      <button onclick="toggleDropdown()" class="inline-flex items-center px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-md hover:bg-blue-800 focus:outline-none">
-        Explore Sections
-        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
+  <div class="about-section">
+    <h2>Our Values</h2>
+    <ul>
+      <li><strong>Respect:</strong> We honor the dignity of every learner and staff member.</li>
+      <li><strong>Integrity:</strong> We uphold honesty, accountability, and ethical conduct.</li>
+      <li><strong>Excellence:</strong> We strive for high standards in academics, culture, and sport.</li>
+      <li><strong>Unity:</strong> We build a strong school community rooted in collaboration and pride.</li>
+    </ul>
+  </div>
 
-      <div id="aboutDropdown" class="absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-10">
-        <div class="py-1">
-          <a href="history.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">History</a>
-          <a href="staff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Staff</a>
-          <a href="uniform.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">School Uniform</a>
-        </div>
+  <div class="about-section">
+    <h2>Leadership & Legacy</h2>
+    <p>
+      Our dedicated educators and school leaders bring passion, experience, and vision to the classroom. Through mentorship, discipline, and innovation, they guide learners toward success and self-belief. Sigweje High School has produced top achievers, community leaders, and cultural ambassadors who continue to make an impact across South Africa.
+    </p>
+  </div>
+
+  <div class="about-section">
+    <h2>Community & Culture</h2>
+    <p>
+      We celebrate our heritage through vibrant cultural programs, community outreach, and inclusive events. Sigweje High School is more than a place of learning — it’s a space where identity is honored, creativity is nurtured, and pride is cultivated.
+    </p>
+  </div>
+</section>
+  <!-- Footer -->
+<footer class="sigweje-footer">
+  <div class="footer-grid">
+
+    <!-- Quick Links -->
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3>Connect With Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp" /></a>
       </div>
     </div>
 
-    <!-- About Us Description -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <p class="text-lg leading-relaxed">
-        Sigweje High School has been a beacon of academic excellence and community pride for decades. Our commitment to nurturing young minds and fostering holistic development has made us one of the most respected institutions in the region.
-      </p>
-      <p class="mt-4">
-        Use the dropdown above to explore more about our history, meet our dedicated staff, and learn about our school uniform policy.
-      </p>
+    <!-- Location Map -->
+    <div>
+      <h3>📍 Find Us</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-md shadow">
+      </iframe>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center py-4 mt-12">
-    <p>© 2025 Sigweje High School | Built by WebPunter</p>
-  </footer>
+  </div>
 
-  <!-- Dropdown Script -->
-  <script>
-    function toggleDropdown() {
-      const dropdown = document.getElementById("aboutDropdown");
-      dropdown.classList.toggle("hidden");
-    }
-
-    window.addEventListener("click", function (e) {
-      const button = document.querySelector("button[onclick='toggleDropdown()']");
-      const dropdown = document.getElementById("aboutDropdown");
-      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.add("hidden");
-      }
-    });
-  </script>
-</body>
-</html>
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    © 2025 Sigweje High School | Built by WebPunter
+  </div>
+</footer>
