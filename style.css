@@ -130,7 +130,7 @@ section {
 }
 
 /* About Section */
-.about-section h3 {
+.about-section h2 {
   font-size: 1.5rem;
   color: var(--sigweje-blue);
 }
