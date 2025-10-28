@@ -587,6 +587,58 @@ section {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* ================================
+   About Us Page Styling
+   ================================ */
+
+.about-hero {
+  background-color: #004d00;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #004d00;
+  margin-bottom: 15px;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
 
 /* ================================
    Footer Styling
