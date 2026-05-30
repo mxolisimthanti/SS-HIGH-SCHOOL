@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7133829151309994"
-     crossorigin="anonymous"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sigweje High School</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    });
-</script>
-
 </head>
+
 <body>
 
+<!-- ✅ HEADER -->
+<div id="header"></div>
 
- <!-- Hero Section with Image Slider -->
+<!-- ✅ HERO SECTION (SLIDER) -->
 <section class="hero-section">
   <div class="slider">
 
@@ -30,22 +24,92 @@
     </div>
 
     <div class="slide">
-      <img src="School.jpg" alt="School Image 2">
+      <img src="academic.jpg" alt="School Image 2">
     </div>
 
     <div class="slide">
-      <img src="School.jpg" alt="School Image 3">
+      <img src="Cultural.jpeg" alt="School Image 3">
     </div>
 
   </div>
 
-
-  <!-- Overlay Content -->
   <div class="hero-content">
     <h1>Innovate. Integrate. Elevate.</h1>
     <p>Empowering South African learners with smart education and community values.</p>
   </div>
 </section>
+
+
+<!-- ✅ ABOUT -->
+<section class="about-section">
+  <div class="content-wrapper">
+    <h2>About Our School</h2>
+    <p>
+      Founded in 1996 in Ladysmith, KwaZulu-Natal, Sigweje High School continues to grow into a beacon of education.
+      Our motto—“Excellence Through Unity”—is reflected in our achievements, culture, and vision.
+    </p>
+    <a href="about.html" class="btn-primary">Read More</a>
+  </div>
+</section>
+
+
+<!-- ✅ SCHOOL HIGHLIGHT -->
+<section class="school-highlight">
+  <div class="school-container">
+
+    <div class="school-image">
+      <img src="School.jpg">
+    </div>
+
+    <div class="school-text">
+      <h2>Explore Sigweje High School</h2>
+      <p>
+        Sigweje High School is a centre of excellence with strong academic and extra-curricular opportunities.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ✅ FOOTER -->
+<footer class="sigweje-footer">
+  <div class="footer-grid">
+
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Connect</h3>
+      <div class="social-icons">
+        <img src="facebook-icon.png">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Sigweje High School
+  </div>
+</footer>
+
+
+<!-- ✅ HEADER LOAD SCRIPT -->
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+
+<!-- ✅ SLIDER SCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   let slides = document.querySelectorAll(".slide");
@@ -64,145 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(showSlide, 3000);
 });
 </script>
-``
-  <!-- About Section -->
-  <section class="about-section">
-    <div class="content-wrapper">
-      <h2>About Our School</h2>
-      <p>
-        Founded in 1996 in Ladysmith, KwaZulu-Natal, Sigweje High School continues to grow into a beacon of education.
-        Our motto—“Excellence Through Unity”—is reflected in our achievements, culture, and vision.
-        A sound education is one of the greatest gifts you can give your child. It shapes their future and empowers success.
-      </p>
-      <a href="about.html" class="btn-primary">Read More</a>
-    </div>
-  </section>
 
-<section class="school-highlight">
-  <div class="school-container">
-    
-    <!-- Left: Image -->
-    <div class="school-image">
-      <img src="School.jpg" alt="Sigweje High School Students">
-    </div>
-
-    <!-- Right: Text -->
-    <div class="school-text">
-      <h2>Explore Sigweje High School</h2>
-      <p>
-        Sigweje High School is a centre of excellence — a secure, safe, and stimulating environment for learners.
-        As a proudly South African public school, we offer outstanding academic and extra-curricular opportunities.
-        Since our founding in 1996, we’ve grown into a beacon of education in KwaZulu-Natal.
-      </p>
-  
-    </div>
-
-  </div>
-</section>
-
-<!-- Three-Column Feature Section -->
-<section class="three-column-section">
-  <div class="column-container">
-
-    <!-- Column 1 -->
-    <div class="column-box">
-      <img src="academic.jpg" alt="Academic Excellence">
-      <h3>Academic Excellence</h3>
-      <p>
-        We hold a proud tradition of academic achievement. Our learners are well prepared for life beyond school, supported by passionate educators and a wide range of subjects.
-      </p>
-      <a href="academics.html" class="btn-primary">Read More</a>
-    </div>
-
-    <!-- Column 2 -->
-    <div class="column-box">
-      <img src="sport.webp" alt="Sporting Successes">
-      <h3>Sporting Successes</h3>
-      <p>
-        Sigweje High School celebrates a legacy of sporting excellence. Our teams compete proudly across codes and build character through teamwork and discipline.
-      </p>
-      <a href="sport.html" class="btn-primary">Read More</a>
-    </div>
-
-    <!-- Column 3 -->
-    <div class="column-box">
-      <img src="Cultural.jpeg" alt="Cultural Activities">
-      <h3>Cultural Activities</h3>
-      <p>
-        From drama to dance, our learners shine in cultural expression. Annual productions and festivals showcase talent and build confidence across the arts.
-      </p>
-      <a href="culture.html" class="btn-primary">Read More</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- Our Philosophies Section -->
-<section class="philosophy-section">
-  <div class="philosophy-container">
-
-    <!-- Left: Text Content -->
-    <div class="philosophy-text">
-      <h2>Our Philosophies</h2>
-      <ul>
-        <li>To provide our learners with the best opportunities to reach their full potential</li>
-        <li>To instill sound moral values and self-belief</li>
-        <li>To excel in academic, sporting, and cultural spheres</li>
-        <li>To foster pride in our school and its leadership</li>
-        <li>To equip staff with facilities and tools for excellence</li>
-        <li>To build a dynamic partnership between parents, teachers, and learners</li>
-      </ul>
-    </div>
-
-    <!-- Right: Image -->
-    <div class="philosophy-image">
-      <img src="philosophies.jpg" alt="Sigweje High School Group">
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Footer -->
-<footer class="sigweje-footer">
-  <div class="footer-grid">
-
-    <!-- Quick Links -->
-    <div>
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="sport.html">Sport</a></li>
-        <li><a href="culture.html">Culture</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Social Media -->
-    <div>
-      <h3>Connect With Us</h3>
-      <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
-        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp" /></a>
-      </div>
-    </div>
-
-    <!-- Location Map -->
-    <div>
-      <h3>📍 Find Us</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
-        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-md shadow">
-      </iframe>
-    </div>
-
-  </div>
-
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    © 2025 Sigweje High School | Built by <a href="https://mxolisimthanti.github.io/mthantitechsolutions/#landing" >Web Punter</a>
-  </div>
-</footer>
+</body>
+</html>
