@@ -8,7 +8,6 @@
   <title>Sigweje High School</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
- <div id="header"></div>
 
 <script>
   fetch('header.html')
@@ -39,26 +38,7 @@
     </div>
 
   </div>
-  <script>
-  let slides = document.querySelectorAll(".slide");
-  let index = 0;
 
-  function showSlide() {
-    slides.forEach((slide) => {
-      slide.classList.remove("active");
-    });
-
-    index++;
-    if (index > slides.length) {
-      index = 1;
-    }
-
-    slides[index - 1].classList.add("active");
-    setTimeout(showSlide, 4000); // change every 4 seconds
-  }
-
-  showSlide();
-</script>
 
   <!-- Overlay Content -->
   <div class="hero-content">
@@ -66,8 +46,25 @@
     <p>Empowering South African learners with smart education and community values.</p>
   </div>
 </section>
-``
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let slides = document.querySelectorAll(".slide");
+  let index = 0;
 
+  function showSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+
+    index = (index + 1) % slides.length;
+
+    slides[index].classList.add("active");
+
+    setTimeout(showSlide, 3000);
+  }
+
+  setTimeout(showSlide, 3000);
+});
+</script>
+``
   <!-- About Section -->
   <section class="about-section">
     <div class="content-wrapper">
