@@ -25,7 +25,11 @@
 .logo-hover:hover {
   transform: scale(1.05);
 }
-
+#header {
+  position: relative;
+  z-index: 1000;
+}
+``
 .school-title {
   font-size: 1.8rem;
   font-weight: bold;
