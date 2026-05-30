@@ -7,7 +7,26 @@ document.addEventListener("DOMContentLoaded", () => {
     menuList.classList.toggle("hidden");
   });
 });
+<script>
+  let slides = document.querySelectorAll(".slide");
+  let index = 0;
 
+  function showSlide() {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+
+    index++;
+    if (index > slides.length) {
+      index = 1;
+    }
+
+    slides[index - 1].classList.add("active");
+    setTimeout(showSlide, 4000); // change every 4 seconds
+  }
+
+  showSlide();
+</script>
 // Scroll-to-top button
 window.addEventListener("scroll", () => {
   document.getElementById("scrollBtn").style.display =
